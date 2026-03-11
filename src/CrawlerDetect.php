@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Jaybizzle\CrawlerDetect;
+namespace Solo\CrawlerDetect;
 
-use Jaybizzle\CrawlerDetect\Fixtures\Crawlers;
-use Jaybizzle\CrawlerDetect\Fixtures\Exclusions;
-use Jaybizzle\CrawlerDetect\Fixtures\Headers;
+use Solo\CrawlerDetect\Fixtures\Crawlers;
+use Solo\CrawlerDetect\Fixtures\Exclusions;
+use Solo\CrawlerDetect\Fixtures\Headers;
 
 class CrawlerDetect
 {
@@ -41,21 +41,21 @@ class CrawlerDetect
     /**
      * Crawlers object.
      *
-     * @var \Jaybizzle\CrawlerDetect\Fixtures\Crawlers
+     * @var \Solo\CrawlerDetect\Fixtures\Crawlers
      */
     protected $crawlers;
 
     /**
      * Exclusions object.
      *
-     * @var \Jaybizzle\CrawlerDetect\Fixtures\Exclusions
+     * @var \Solo\CrawlerDetect\Fixtures\Exclusions
      */
     protected $exclusions;
 
     /**
      * Headers object.
      *
-     * @var \Jaybizzle\CrawlerDetect\Fixtures\Headers
+     * @var \Solo\CrawlerDetect\Fixtures\Headers
      */
     protected $uaHttpHeaders;
 
@@ -76,7 +76,7 @@ class CrawlerDetect
     /**
      * Class constructor.
      */
-    public function __construct(?array $headers = null, $userAgent = null)
+    public function __construct($headers = null, $userAgent = null)
     {
         $this->crawlers = new Crawlers;
         $this->exclusions = new Exclusions;

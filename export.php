@@ -21,7 +21,7 @@ $src = [
 ];
 
 foreach ($src as $class) {
-    $class = "Jaybizzle\\CrawlerDetect\\Fixtures\\$class";
+    $class = "Solo\\CrawlerDetect\\Fixtures\\$class";
     $object = new $class;
 
     outputJson($object);
