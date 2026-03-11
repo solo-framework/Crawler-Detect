@@ -3,11 +3,6 @@
 
 CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the `user agent` and `http_from` header. Currently able to detect 1,000's of bots/spiders/crawlers.
 
-### Installation
-```
-composer require Solo/crawler-detect
-```
-
 ### Usage
 ```PHP
 use Solo\CrawlerDetect\CrawlerDetect;
